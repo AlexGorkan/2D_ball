@@ -4,16 +4,18 @@ using UnityEngine;
 
 public class BallsCollidesGround : MonoBehaviour
 {
-    void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision other)
     {
         Debug.Log(other.gameObject.name);
         //BallCondition ball = other.gameObject.GetComponent<BallCondition>();
 
         //if (ball != null)
         //{
-        //    Debug.Log("Collison");
+        //    //Destroy(other.gameObject); // destroy ovcu
+        //    //sheep.DestroySheep(); //vizivaem metod iz Scripta Sheep
+        //    //sheep.gameObject.SetActive(false);
+        //    Debug.Log("Collison Occured");
 
         //}
     }
-    
 }
