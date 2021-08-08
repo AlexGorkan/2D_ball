@@ -21,15 +21,8 @@ public class BallsSpawner : MonoBehaviour
             float yRandomPosition = Random.Range(ySpawnBounds.x, ySpawnBounds.y);
             Vector2 randomSpawnPosition = new Vector2(xRandomPosition, yRandomPosition); //sozdaetsa novaia coordinata 
             Instantiate(ballPrefab, randomSpawnPosition, ballPrefab.transform.rotation); //spawn s uslovijami v skobkah
-                                                                                         //GameObject sheepObject = ObjectPooler.objectPooler.GetPooledObject(objectTag); //sozdaem objekt so sslikoj na pool
+                                                                                         
         }
     }
-
-    
-    
-    void Update()
-    {
-        
-        
-    }
+      
 }
