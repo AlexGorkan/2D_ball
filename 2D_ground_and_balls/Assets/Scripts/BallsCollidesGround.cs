@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class BallsCollidesGround : MonoBehaviour
 {
-    private void OnCollisionEnter(Collision other)
+    private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log(other.gameObject.name);
+        Debug.Log("CCCC1");
+        //Debug.Log(other.gameObject.name);
         //BallCondition ball = other.gameObject.GetComponent<BallCondition>();
 
         //if (ball != null)
@@ -18,4 +19,9 @@ public class BallsCollidesGround : MonoBehaviour
 
         //}
     }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("CCCC");
+    }
 }
+
